@@ -4,7 +4,7 @@ public class CommentModel extends AbstractModel {
 
     private String content;
     private Long userId;
-    private Long new_id;
+    private Long newId;
 
     public void setContent(String content) {
         this.content = content;
@@ -14,19 +14,19 @@ public class CommentModel extends AbstractModel {
         return content;
     }
 
-    public Long getNew_id() {
-        return new_id;
-    }
-
     public Long getUserId() {
         return userId;
     }
 
-    public void setNew_id(Long new_id) {
-        this.new_id = new_id;
-    }
-
     public void setUserId(Long userId) {
         this.userId = userId;
+    }
+
+    public Long getNewId() {
+        return newId;
+    }
+
+    public void setNewId(Long newId) {
+        this.newId = newId;
     }
 }

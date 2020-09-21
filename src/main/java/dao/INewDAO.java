@@ -1,4 +1,9 @@
 package dao;
 
-public interface INewDAO {
+import model.NewsModel;
+
+import java.util.List;
+
+public interface INewDAO extends IGenericDAO {
+    List<NewsModel> findByCategoryId(Long categoryId);
 }
